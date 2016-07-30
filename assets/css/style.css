@@ -1,0 +1,30 @@
+body{
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+
+#hamburger-menu{
+	height: 40px;
+	margin-top: 1%;
+	margin-left: 1%;
+}
+
+#dropdown{
+	display: none;
+	width: 5%;
+	margin-left: 2%;
+}
+
+#name{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	padding-top: 17%;
+	height: 20%;
+}
+
+#intro-name, #intro-title{
+	display: none;
+}
