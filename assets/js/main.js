@@ -4,7 +4,10 @@ $(document).ready(function(){
 	$('#hamburger-menu').mouseover(showMenu);
 	$('#hamburger-menu').click(showMenu);
 	$('#dropdown').hover(showMenu, hideMenu);
+	$('#myCarousel').carousel();
 });
+
+
 
 function displayTitle(){
 	$('#intro-title').fadeIn(300);

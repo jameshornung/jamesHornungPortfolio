@@ -47,7 +47,7 @@ a, a:hover{
 #navbar-name{
 	padding-top: 15px;
 	font-size: 15px;
-	color: #fffbf5;
+	color: #9d9d9d;
 }
 
 #nav-links{
@@ -58,4 +58,26 @@ a, a:hover{
 	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.portfolio-image{
+	border: 2px solid #222;
+}
+
+#quote{
+	font-family: 'Rock Salt', cursive;
+}
+
+#quote1{
+	margin-left: 35px;
+	margin-top: 25px;
+}
+
+#quote2{
+	margin-left: 116px;
+}
+
+#bio{
+	margin-top: 100px;
+	padding: 15px;
 }
