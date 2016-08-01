@@ -5,26 +5,47 @@ body{
 	color: white;
 }
 
+a, a:hover{
+	text-decoration: none;
+	color: white;
+}
+
 #hamburger-menu{
 	height: 40px;
-	margin-top: 1%;
-	margin-left: 1%;
+	margin-top: 10px;
+	margin-left: 10px;
 }
 
 #dropdown{
+	position: absolute;
 	display: none;
-	width: 5%;
-	margin-left: 2%;
+	width: 63px;
+	height: 61px;
+	margin-left: 26px;
 }
 
 #name{
 	width: 50%;
 	margin: auto;
 	text-align: center;
-	padding-top: 17%;
+	margin-top: 250px;
 	height: 20%;
 }
 
 #intro-name, #intro-title{
 	display: none;
+}
+
+.menu-item:hover{
+	background-color: #545452;
+	border-radius: 25px;
+	padding-left: 2px;
+	padding-right: 2px;
+	text-align: center;
+}
+
+#navbar-name{
+	padding-top: 15px;
+	font-size: 15px;
+	color: #fffbf5;
 }

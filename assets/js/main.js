@@ -1,7 +1,9 @@
 $(document).ready(function(){
 	$('#intro-name').fadeIn(3000);
 	setTimeout(displayTitle, 2500);
-	$('#navigation-source').hover(showMenu, hideMenu);
+	$('#hamburger-menu').mouseover(showMenu);
+	$('#hamburger-menu').click(showMenu);
+	$('#dropdown').hover(showMenu, hideMenu);
 });
 
 function displayTitle(){
