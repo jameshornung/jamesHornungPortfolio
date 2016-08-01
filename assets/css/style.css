@@ -49,3 +49,13 @@ a, a:hover{
 	font-size: 15px;
 	color: #fffbf5;
 }
+
+#nav-links{
+	float: right;
+}
+
+#myCarousel{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
