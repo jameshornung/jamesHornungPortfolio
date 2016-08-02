@@ -88,14 +88,15 @@ a, a:hover{
 
 #quote2{
 	margin-left: 116px;
+	margin-top: -8px;
 }
 
 #bio{
-	margin-top: 100px;
-	width: 80%;
+	margin-top: 60px;
+	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
-	font-size: 15px;
+	font-size: 17px;
 }
 
 #bio-text{
