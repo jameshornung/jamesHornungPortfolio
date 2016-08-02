@@ -1,14 +1,17 @@
 body{
+	font-family: Cabin, sans-serif;
 	height: 100%;
 	width: 100%;
-	background-color: black;
-	color: white;
+	background-color: #0D0106;
+	color: #FBFBFF;
 }
 
 a, a:hover{
 	text-decoration: none;
 	color: white;
 }
+
+/* SPLASH PAGE ==============================================*/
 
 #hamburger-menu{
 	height: 40px;
@@ -44,15 +47,26 @@ a, a:hover{
 	text-align: center;
 }
 
+/* NAVBAR ============================================================*/
+
 #navbar-name{
 	padding-top: 15px;
 	font-size: 15px;
 	color: #9d9d9d;
+	font-family: 'Josefine Slab', serif;
+	font-size: 20px;
 }
 
 #nav-links{
 	float: right;
+	font-family: 'Josefine Sans', sans-serif;
 }
+
+.navbar{
+	border-bottom: 3px solid #30343F;
+}
+
+/* PORTFOLIO ======================================================*/
 
 #myCarousel{
 	width: 500px;
@@ -65,8 +79,7 @@ a, a:hover{
 }
 
 #quote{
-	font-family: 'Rock Salt', cursive;
-}
+	}
 
 #quote1{
 	margin-left: 35px;
@@ -79,5 +92,30 @@ a, a:hover{
 
 #bio{
 	margin-top: 100px;
-	padding: 15px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 15px;
+}
+
+#bio-text{
+	
+}
+
+.bio-pic{
+	height: 250px;
+	border: 4px solid #30343F;
+	padding: 2px;
+}
+
+#bio-pic1{
+	float: right;
+	height: 200px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#bio-pic2{
+	float: left;
+	margin-right: 10px;
 }
