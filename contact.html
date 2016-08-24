@@ -1,3 +1,29 @@
+<?php
+if ($_POST['submit']){
+	if(!$_POST['name']){
+		$error="Please enter your name";
+	}
+	if(!$_POST['email']){
+		$error.="<br/>- Please enter your e-mail address";
+	}
+	if(!$_POST['message']){
+		$error.="<br/>- Please enter a message";
+	}
+	if(!$_POST['check']){
+		$error.="<br/>- Please verify you are human";
+	}
+
+	if($error){
+		$result="I'm sorry there is an error.  Please correct the following: $error"
+	}
+
+
+
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +34,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Josefin+Slab|Libre+Baskerville|Roboto+Slab|Roboto|Cabin|Josefin+Sans|Rock+Salt' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="container">
+	<div class="container">
 		<nav class="navbar navbar-inverse">
   			<div class="container-fluid">
     			<div class="navbar-header">
@@ -16,18 +42,45 @@
     			</div>
     			<div id="nav-links">
     				<ul class="nav navbar-nav">
-      					<li><a href="about.html">About Me</a></li>
-      					<li><a href="portfolio.html">Portfolio</a></li> 
-      					<li><a href="contact.html">Contact</a></li> 
+      					<li><a href="about">About Me</a></li>
+      					<li><a href="portfolio">Portfolio</a></li> 
+      					<li><a href="contact">Contact</a></li> 
     				</ul>
     			</div>
     		</div>
 		</nav>
-		<h2 id="temp-title">This page is under construction, please check back soon.</h2>
-		<h3 id="temp-title">E-mail: hornung.james@gmail.com</h3>
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+
+			<?php echo $result;?>
+
+				<form method="post" role="form">
+					<div class="form-group">
+						<input type="text" name="name" class="form-control" placeholder="name">
+					</div>
+					<div class="form-group">
+						<input type="text" name="email" class="form-control" placeholder="e-mail">
+					</div>
+					<div>
+						<textarea name="message" rows="5" class="form-control" placeholder="message"></textarea>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox" name="check">I am a human
+						</label>
+					</div>
+					<div align="center">
+						<input type="submit" class="btn btn-secondary" value="send message" />
+					</div>
+				</form>
+			</div>
+		</div>
+
+
+
+
 
 	</div>
-
 	<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
 	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
